@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ysabela Diaz</title>
+    <link href="WebFont/font-css/LineIcons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img src="./leaf.png" class="logo" alt="leaf" />
+        <nav>
+          <ul id="menuList">
+            <li><a href="" class="">home</a></li>
+            <li><a href="" class="">about</a></li>
+            <li><a href="" class="">contact</a></li>
+          </ul>
+        </nav>
+        <img
+          src="./menu.png"
+          class="menu-logo"
+          alt="menu logo"
+          onclick="togglemenu()"
+        />
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <h2>Ysabela <br />Diaz</h2>
+          <h3>Virtual & Admin Assistant</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum
+            impedit animi illo consectetur totam quaerat possimus error
+            explicabo, voluptate quia!
+          </p>
+          <button>
+            More
+            <img src="./arrow.png" alt="arrow" class="button-img" />
+          </button>
+        </div>
+        <div class="col-2">
+          <img src="./woman.png" alt="woman" class="woman" />
+          <div class="color-box"></div>
+          <div class="msg-button">
+            <img src="./message.png" alt="message" />
+            <p>let's talk!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="social-links">
+        <img src="./fb.png" alt="fb" />
+        <img src="./linkedin.png" alt="fb" />
+        <img src="./oj.png" alt="fb" />
+      </div>
+    </div>
+    <script>
+      var menuList = document.getElementById("menuList");
+
+      menuList.style.maxHeight = "0px";
+
+      function togglemenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "130px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
